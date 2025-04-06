@@ -27,10 +27,10 @@ st.write(df)
 # input dates
 #start_date = st.date_input("Podaj datę początkową", min_value="1900-01-01", max_value="2300-01-01")
 #end_date = st.date_input("Podaj datę końcową", min_value="1900-01-01", max_value="2300-01-01")
-elapsed_years = st.number_input("Enter the number of years since the waste was generated: ")
+elapsed_years = st.number_input("Enter the number of years since the waste was generated: ", step=0.5, format="%0.1f")
 #elapsed_years = (end_date - start_date).days/365
 elapsed_months = int(elapsed_years*12)
-mass = st.number_input("Enter the mass of the waste in kg: ")
+mass = st.number_input("Enter the mass of the waste in kg: ", step=0.5, format="%0.1f")
 
 st.divider()
 
